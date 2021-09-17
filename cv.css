@@ -1,12 +1,27 @@
 aside {
   width: 15%;
-  height: 150%;
+  height: 2000px;
   background: rgb(221, 143, 25);
+}
+
+.containerMain{
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 50px;
 }
 
 .containerMain h4{
     
     width: 100%;
+}
+
+.coordonnees{
+    position: relative;
+    right: 15%;
+}
+
+h3,h4{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 img{
@@ -21,23 +36,113 @@ img{
 
 li {
   list-style: none;
+  font-family: monospace;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
 }
 
 main{
     position: absolute;
-    left:500px;
+    left:250px;
+}
+
+nav{
+    font-family: monospace;
 }
 
 .photo {
   background: bisque;
   position: relative;
-  top: 10px;
+  top: -110px;
   border: solid 1px bisque;
   border-radius: 15px;
   box-shadow: 2px 2px 2px;
 }
 
 table{
-    width: 100%;
+    width: 100%;  
+}
+
+td{
+    width: 25%;
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        width: 70px;
+        position: relative;
+        left: 200px;
+    }
+    .container{
+        width:10%;
+        height: auto;
+        position: absolute;
+        top:100px;
+    }
+    aside{
+        width:10%;
+        height: auto;
+        top:100px;
+        
+    }
+    .identite{
+        width:50%;
+        
+    }
+
+    .photo{
+        position: relative;
+        top:10px;
+        width: 60%;
+        height:60%;
+    }
+    .photo img{
+        width:80%;
+        height: auto;
+    }
     
 }
+
+@media (min-width: 767px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+/*---------effet li ------------*/
+ul > li {
+    opacity: 0;
+  }
+  ul > li:nth-child(1) {
+    animation-name: testanim;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  ul > li:nth-child(2) {
+    animation-name: testanim;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  ul > li:nth-child(3) {
+    animation-name: testanim;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes testanim {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
