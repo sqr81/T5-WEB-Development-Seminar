@@ -1,3 +1,11 @@
+a:hover{
+  color:rebeccapurple !important;
+}
+a{
+  color: cornflowerblue !important;
+  text-decoration: none !important;
+}
+
 .jumbotron {
   background-image: url("/img/code.jpg");
   width: 100%;
@@ -7,6 +15,18 @@
 .card {
   width: 277px;
   margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px !important;
+  box-shadow: 15px 15px 15px;
+}
+
+ .carte{
+   position: relative;
+top:10px;
+ }
+
+h1{
+  font-family: monospace;
 }
 
 nav {
@@ -80,7 +100,6 @@ ul > li:nth-child(3) {
       transform: translateY(0);
     }
   }
-
 
 /*----------media queries----------------*/
 
