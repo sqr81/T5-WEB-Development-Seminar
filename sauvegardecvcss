@@ -1,5 +1,5 @@
 aside {
-  width: 13%;
+  width: 10%;
   height: auto;
   background: rgb(221, 143, 25);
 }
@@ -93,37 +93,16 @@ td {
   width: 25%;
 }
 
-@media  screen and (min-width: 320px) and (max-width: 576px){
-  html{
-    width: fit-content;
-  }
-  
+@media  (min-width: 576px) {
   .container{
     width: 100%;
   }
 
-  main{
-    width: 100%;
-  }
   .main {
-    width: 100%;
-  }
-  .containerMain{
-    margin-left: 0;
+   width: 100%;
   }
 }
-@media  screen and (min-width: 576px) and (max-width: 767px){
-  .container{
-    width: 100%;
-  }
 
-  main{
-    width: 100%;
-  }
-  .main {
-    width: 100%;
-  }
-}
 @media screen and (max-width: 767px) {
   body {
     width: auto;
@@ -145,14 +124,14 @@ td {
   }
 
   main {
-    width: 100%;
+    width: 80%;
     position: relative;
     left: 0;
     top: 480px;
   }
 
   aside .container {
-    min-width: 100%;
+    width: 100%;
     position: absolute;
     left: 0;
     top: 150px;
@@ -232,11 +211,13 @@ td {
   html{
     width: 100%;
   }
-  
+
   body {
     width: auto;
   }
-  
+  header {
+    width: 20%;
+  }
 
   .nav {
     width: auto;
@@ -354,10 +335,8 @@ td {
     top: 20px;
   }
 }
-
 @media screen and (min-width: 1024px) {
-
-}
+ 
 
 /*---------effet li ------------*/
 ul > li {
@@ -524,4 +503,5 @@ ul > li:nth-child(3) {
   -moz-animation-delay: 1s;
   -o-animation-duration: 1s;
   animation-delay: 1s;
+}
 }
